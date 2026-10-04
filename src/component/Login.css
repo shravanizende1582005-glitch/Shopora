@@ -1,0 +1,105 @@
+
+/* Only the login page background */
+.login-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+/* Login box */
+.login-container {
+  width: min(400px, 100%);
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Login heading only */
+.login-container h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Labels only inside login */
+.login-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Inputs only inside login */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Input focus */
+.login-container input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Button only inside login */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Registration link */
+.login-container a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    min-height: calc(100vh - 64px);
+    padding: 20px 15px;
+  }
+
+  .login-container {
+    padding: 28px 22px;
+  }
+
+  .login-container h2 {
+    font-size: 25px;
+    margin-bottom: 24px;
+  }
+}
